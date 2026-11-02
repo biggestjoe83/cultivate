@@ -15,15 +15,9 @@
       href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body>
-    <header class="py-4 md:py-7 px-4">
+  <header class="py-1 md:py-7 px-4 fixed bg-white left-0 top-0 right-0 z-20 mb-30">
       <section class="flex justify-between items-center max-w-[1200px] mx-auto">
-        <span
-          class="font-extrabold text-[#00bc8e] font-[Metamorphous] text-4xl"
-        >
-          Cultivate
-        </span>
+        <span class="font-extrabold text-[#00bc8e] font-[Metamorphous] text-4xl"> Cultivate </span>
         <nav class="hidden lg:block">
           <ul class="flex items-center gap-10">
             <li>
@@ -35,7 +29,7 @@
             </li>
             <li>
               <a
-                href="#"
+                href="./about.html"
                 class="pb-1 text-xl text-[#4a5565]-600 hover:text-emerald-500 hover:border-b-2 hover:border-emerald-500"
                 >About Us</a
               >
@@ -89,10 +83,10 @@
       <nav class="hidden mt-4 peer-checked:block">
         <ul class="flex flex-col gap-5">
           <li>
-            <a href="#" class="pb-1 text-xl text-[#4a5565]-600">Home</a>
+            <a href="./about.html" class="pb-1 text-xl text-[#4a5565]-600">Home</a>
           </li>
           <li>
-            <a href="#" class="pb-1 text-xl text-[#4a5565]-600">About Us</a>
+            <a href="./about.html" class="pb-1 text-xl text-[#4a5565]-600">About Us</a>
           </li>
           <li>
             <a href="#" class="pb-1 text-xl text-[#4a5565]-600">Courses</a>
@@ -102,7 +96,7 @@
           </li>
         </ul>
 
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-5">
           <button
             class="py-3 px-8 text-emerald-700 border border-emerald-200 rounded-2xl cursor-pointer font-semibold text-lg hover:bg-emerald-50"
           >
@@ -120,7 +114,7 @@
 
     <!-- About Us -->
     <section class="bg-[#f9fafb]">
-      <div class="w-[900px] mx-auto justify-center items-center py-10 px-5">
+      <div class="w-full max-w-300 md:grid-cols-2 mx-auto justify-center items-center py-10 px-5 mt-20">
         <div class="text-center justify-center">
           <h2 class="text-3xl font-bold mb-[20px]">About Us</h2>
           <span class="text-[#009966] font-medium text-2xl">
@@ -136,13 +130,13 @@
         </div>
 
         <div
-          class="grid grid-cols-2 items-center justify-center py-10 mb-10 gap-5"
+          class="grid grid-cols-1 md:grid-cols-2 items-center justify-center py-10 mb-10 gap-5"
         >
           <div
             class="mt-10 border-l-4 rounded-2xl px-5 py-5 border-[#009966] bg-white shadow-sm"
           >
             <h2 class="font-bold text-2xl">Our Mission</h2>
-            <p class="mt-2 text-[22px]">
+            <p class="mt-2 text-lg md:text-[22px]">
               To provide personalized coaching that builds confidence, masters
               complex subjects, and delivers measurable results for every
               student.
@@ -152,7 +146,7 @@
           <div
             class="mt-10 border-l-4 rounded-2xl px-5 py-5 border-[#009966] bg-white shadow-sm"
           >
-            <h2 class="font-bold text-2xl">Our Vision</h2>
+            <h2 class="font-bold text-[22px]">Our Vision</h2>
             <p class="mt-2 text-[22px]">
               To create a global community where knowledge is shared freely and
               every learner has the tools to reach their full potential.
@@ -162,21 +156,21 @@
 
         <div>
           <h2 class="font-bold text-2xl">Why Choose Us?</h2>
-          <ul class="leading-10 mt-10 list-disc list-inside px-2">
+          <ul class="leading-10 sm:leading-10 mt-10 list-disc list-inside px-2 justify-evenly">
             <li>
-              <span class="font-semibold text-xl">Expert Tutors:</span>
+              <span class="font-semibold text-lg sm:text-xl">Expert Tutors:</span>
               Hand-picked instructors with proven track records.
             </li>
             <li>
-              <span class="font-semibold text-xl">Flexible Learning:</span>
+              <span class="font-semibold text-lg sm:text-xl">Flexible Learning:</span>
               Study from anywhere, at any time that suits you.
             </li>
             <li>
-              <span class="font-semibold text-xl">Interactive Tools:</span>
+              <span class="font-semibold text-lg sm:text-xl">Interactive Tools:</span>
               Modern technology to make online learning feel personal.
             </li>
             <li>
-              <span class="font-semibold text-xl">Affordable Rates:</span>
+              <span class="font-semibold text-lg sm:text-xl">Affordable Rates:</span>
               Quality education shouldn't break the bank.
             </li>
           </ul>
@@ -184,34 +178,26 @@
       </div>
     </section>
 
-    <!-- footer -->
-    <footer class="">
-      <div
-        class="flex items-center text-left justify-between max-w-[1200px] mx-auto h-30 bg-[#ffffff] flex-col md:flex-row md:p-[20px]"
-      >
-        <div>
-          <span
-            class="font-extrabold text-[#00bc8e] font-[Metamorphous] text-[30px]"
-          >
-            Cultivate
-          </span>
-          <p class="text-[#62748e] text-[15px]">
-            Empowering students through personalized coaching.
-          </p>
-        </div>
+   <!-- footer -->
+      <footer class="">
+        <div class="flex items-center text-left justify-between max-w-[1200px] mx-auto min-h-30 bg-[#ffffff] flex-col md:flex-row gap-4 py-6 px-4 md:p-[20px]">
+            <div>
+                <span class="font-extrabold text-[#00bc8e] font-[Metamorphous] text-[30px]"> Cultivate </span>
+                <p class="text-[#62748e] text-[15px]">Empowering students through personalized coaching.</p>
+            </div>
 
-        <div class="text-[#62748e] flex justify-between gap-4.5 font-semibold">
-          <a class="hover:text-[#00bc7d]" href="#">Privacy Policy</a>
-          <a class="hover:text-[#00bc7d]" href="#">Terms of Service</a>
-          <a class="hover:text-[#00bc7d]" href="#">Contact Us</a>
-        </div>
+            <div class="text-[#62748e] flex flex-wrap justify-between gap-4.5 font-semibold">
+                <a class="hover:text-[#00bc7d]" href="#">Privacy Policy</a>
+                <a class="hover:text-[#00bc7d]" href="#">Terms of Service</a>
+                <a class="hover:text-[#00bc7d]" href="#">Contact Us</a>
+            </div>
 
-        <div>
-          <span class="text-[#62748e]">
-            © 2024 Cultivate. All rights reserved.
-          </span>
+            <div>
+                <span class="text-[#62748e]">
+                    © 2024 Cultivate. All rights reserved.
+                </span>
+            </div>
         </div>
-      </div>
-    </footer>
+      </footer>
   </body>
 </html>
